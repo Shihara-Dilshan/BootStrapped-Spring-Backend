@@ -1,5 +1,7 @@
 package com.noobstack.expense.model;
 
+import com.sun.istack.NotNull;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -10,6 +12,7 @@ public class Category {
 
     @Id
     private long id;
+    @NotNull
     private String name;
 
     public Category() {
